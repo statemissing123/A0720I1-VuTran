@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Nhap(number) {
+        let total = 0;
+        for (let i = 1;i <  number;i++){
+            if (number%i==0 && number > 0){
+                total += i;
+            }
+        }
+        if (total == number){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    let check = Nhap(parseInt(prompt("Nhâp số hoàn hảo cần kiểm tra: ")));
+    alert(check);
+</script>
+</body>
+</html>

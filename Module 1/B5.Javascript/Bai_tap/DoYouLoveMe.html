@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me <3</title>
+</head>
+<body>
+    <h1 style="margin-left: 500px">DO YOU LOVE ME</h1>
+    <input type="button" value="YES" onclick="YesOn()" style="margin-left: 500px" >
+    <input type="button" value="NO" onmouseover="NoRun()" id="Noo" >
+</body>
+</html>
+<script>
+    function YesOn() {
+        alert("Yêu Đi Đừng Sợ");
+    }
+    function NoRun()
+    {
+
+        let a = Math.round(Math.random() * window.innerWidth);
+        let b = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('Noo').style.position= "absolute"
+        alert(a+","+b)
+        document.getElementById('Noo').style.left = a + 'px';
+        document.getElementById('Noo').style.top = b + 'px';
+    }
+</script>

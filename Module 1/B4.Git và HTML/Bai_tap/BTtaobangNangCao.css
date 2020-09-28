@@ -1,0 +1,32 @@
+body{
+    background-color: yellow;
+}
+table{
+    width: 40%;
+}
+
+}
+th, td {
+    text-align: left;
+    width: 50px;
+    height: 50px;
+}
+
+
+tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: black
+}
+tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
+}
+
+
+

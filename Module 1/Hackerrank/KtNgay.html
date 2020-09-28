@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let check = false;
+    let regex =/^(([0][1-9])|1[0-2])\/(19[0-9]{2}|2[0-9]{3})$/;
+    do {
+        let monthYear = prompt("Nhập tháng năm");
+        if (regex.test(monthYear)){
+            var month = monthYear;
+            check = true;
+        }else {
+            alert("Vui lòng nhập đúng định dạng MM/yyyy")
+        }
+    }while (!check);
+    tinhThanhNam(month);
+    function tinhThanhNam(monthYear) {
+        let month = monthYear.substring(0,2);
+        let year = monthYear.substring(3,7);
+        let x = parseInt(month);
+        let y = parseInt(year);
+        switch (x) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 : {
+                alert("31 Ngày");
+                break;
+            }
+            case 4 :
+            case 6 :
+            case 9 :
+            case 11: {
+                alert("30 Ngày");
+                break;
+            }
+            case 2 : {
+                if (((y % 4 == 0) && (y % 100 !== 0)) || (y % 400 == 0)){
+                    alert("29 Ngày");
+                }else {
+                    alert("28 Ngày");
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC =doC ;
+        }
+        cToF(){
+            return this.doC*1.8 + 32
+        }
+        cToK(){
+            return this.doC + 273.15
+        }
+    }
+    let temp = new Temperature(25);
+    alert(temp.cToF());
+    alert(temp.cToK());
+
+</script>
+</body>
+</html>

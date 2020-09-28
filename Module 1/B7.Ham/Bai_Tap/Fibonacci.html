@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(number){
+        let a0 = 1;
+        let a1 = 1;
+        let temp = 0;
+        while (temp < number ){
+            temp = a0 + a1;
+            a0 = a1;
+            a1 = temp;
+        }
+        if (temp === number || number == 0 || number == 1){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    let check = isFibonacci(parseInt(prompt("số muốn kiểm tra có phải thuộc fibonacci : ")));
+    alert(check);
+
+</script>
+</body>
+</html>

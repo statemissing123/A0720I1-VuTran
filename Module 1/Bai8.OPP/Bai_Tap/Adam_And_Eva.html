@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(weight) {
+            this.weight= weight;
+        }
+
+    }
+    let weightApple = new Apple(10);
+    class Human{
+        constructor(name,gioitinh,kg,) {
+            this.name = name;
+            this.gioitinh = gioitinh;
+            this.kg = kg;
+        }
+        talk(){
+            return console.log(prompt(""))
+        }
+        eatApple(apple){
+            if (apple.weight > 0){
+                this.kg++;
+                apple.weight--;
+            }else {
+                alert("het tao roi")
+            }
+        }
+    }
+    let people = new Human('adam','Nam',45);
+    let people2 = new Human('eva','Nu',45);
+    // people.eatApple(weightApple);
+    // people2.eatApple(weightApple);
+    let check = confirm("bạn có muốn ăn táo");
+    while (check){
+        people.eatApple(weightApple);
+        people2.eatApple(weightApple);
+        check = confirm("Bạn có muốn ăn tiếp không"+" số táo còn là: "+weightApple.weight);
+    }
+    alert("Tên: "+people.name +"\n"+"Giới tính: "+ people.gioitinh +"\n" +"Cân nặng: "+  people.kg);
+    alert("Tên: "+people2.name +"\n"+"Giới tính: "+ people2.gioitinh +"\n"+"Cân nặng: "+ people2.kg);
+
+
+</script>
+</body>
+</html>

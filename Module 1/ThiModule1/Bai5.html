@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số lượng phần tử trong mảng: "));
+    let array = new Array(n);
+    for (let j = 0 ; j<n;j++){
+        array[j]=parseInt(prompt("Nhập phần tử thứ" + (j+1)));
+    }
+    let number = parseInt(prompt("Nhập số nguyên X: "));
+    function tryRemoveFromArrray(array,number) {
+        for (let i = 0; i < array.length;i++){
+            if (array[i]==number){
+                array.splice(i,1);
+                i--;
+            }
+        }
+        return array;
+    }
+    alert(tryRemoveFromArrray(array,number));
+</script>
+</body>
+</html>

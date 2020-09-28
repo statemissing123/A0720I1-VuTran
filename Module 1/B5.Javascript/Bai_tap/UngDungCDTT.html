@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="UngdungCDTT.css"
+</head>
+<body>
+    Amount: <input type="text" id="money">
+    From Currency: <select id="fromcurrency">
+        <option>USD</option>
+        <option>VND</option>
+    </select>
+    To Currency: <select id="tocurrency">
+        <option>USD</option>
+        <option>VND</option>
+    </select>
+    <button onclick="convertAmount()">Submit</button>
+    <script>
+        function convertAmount() {
+            let result = 0;
+            let money = document.getElementById("money");
+            if (isNaN(money.value) || money.value<0) {
+                result = "Bạn đã nhập không đúng"
+            } else {
+                let fromcurrency = document.getElementById("fromcurrency");
+                let tocurrency = document.getElementById("tocurrency");
+                if (fromcurrency.value === "USD" && tocurrency.value === "VND") {
+                    result = money.value *23000 + "VND";
+                } else if (fromcurrency.value === "VND" && tocurrency.value === "USD") {
+                    result = money.value /23000 + "USD";
+                } else {
+                    result = " Mời bạn nhập lại "
+                }
+            }
+            alert(result);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Mã số sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số quyển</th>
+        <th>Tình Trạng</th>
+    </tr>
+    <tr>
+        <td>12345</td>
+        <td>Toán</td>
+        <td>2000</td>
+        <td>3</td>
+        <td>True</td>
+    </tr>
+    <tr>
+        <td>23456</td>
+        <td>Văn</td>
+        <td>1998</td>
+        <td>4</td>
+        <td>True</td>
+    </tr>
+    <tr>
+        <td>37456</td>
+        <td>Tiếng Anh</td>
+        <td>1999</td>
+        <td>6</td>
+        <td>False</td>
+    </tr>
+</table>
+<input type="button" value="Thêm Sách Đã Có" id="themsachdaco">
+<input type="button" value="Thêm Sách Mới" id="themsachmoi">
+<input type="button" value="Mượn Sách" id="muonsach">
+<input type="button" value="Hiển Thị Sách Nhiều Nhất" id="hienthisach">
+<script>
+    class Sach{
+        constructor(maSach,tenSach,xuatban,soquyen,tinhtrang) {
+            this.maSach = maSach;
+            this.tenSach = tenSach;
+            this.xuatban = xuatban;
+            this.soquyen = soquyen;
+            this.tinhtrang = tinhtrang;
+        }
+        getmaSach(maSach){
+            this.maSach=maSach;
+        }
+        setmaSach() {
+            return this.maSach;
+        }
+        gettenSach(tenSach){
+            this.tenSach=tenSach;
+        }
+        settenSach() {
+            return this.tenSach;
+        }
+        getxuatban(xuatban){
+            this.xuatban=xuatban;
+        }
+        setxuatban() {
+            return this.xuatban;
+        }
+        getsoquyen(soquyen){
+            this.soquyen=soquyen;
+        }
+        setsoquyen(){
+            return this.soquyen;
+        }
+        gettinhtrang(tinhtrang){
+            this.tinhtrang=tinhtrang;
+        }
+        settinhtrang(){
+            return this.tinhtrang;
+        }
+    }
+</script>
+</body>
+</html>

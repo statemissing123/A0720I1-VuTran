@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="YC2.css"
+</head>
+<body>
+<h1 style="color: aqua">FURAMA</h1>
+<h3 style="color: white">BOOKING</h3>
+<form action="" id="bookingForm" >
+    <table>
+        <tr>
+            <td><label for="fullName" style="color: white">Họ và tên:</label></td>
+            <td><input type="text" name="fullName" id="fullName" /></td>
+        </tr>
+        <tr>
+            <td><label for="identityNumber" style="color: white">Số CMND:</label></td>
+            <td>
+                <input type="number" name="identityNumber" id="identityNumber" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="birthDay"STYLE="color: white">Ngày sinh:</label></td>
+            <td><input type="date" name="birthDay" id="birthDay" /></td>
+        </tr>
+        <tr>
+            <td><label for="email"style="color: white">E-mail:</label></td>
+            <td><input type="email" name="email" id="email" /></td>
+        </tr>
+        <tr>
+            <td><label for="address" style="color: white">Địa chỉ:</label></td>
+            <td><input type="text" name="address" id="address" /></td>
+        </tr>
+        <tr>
+            <td><label for="customerType"style="color: white">Hạng thành viên:</label></td>
+            <td>
+                <select name="customerType" id="customerType">
+                    <option>Member</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
+                    <option>Dimond</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="discoutRate"style="color: white">Giảm giá:</label></td>
+            <td><input type="number" name="discoutRate" id="discoutRate" /></td>
+        </tr>
+        <tr>
+            <td><label for="guestCount"style="color: white">Số lượng đi kèm:</label></td>
+            <td><input type="number" name="guestCount" id="guestCount" /></td>
+        </tr>
+        <tr>
+            <td><label for="rentDays"style="color: white">Số ngày thuê:</label></td>
+            <td><input type="number" name="rentDays" id="rentDays" /></td>
+        </tr>
+        <tr>
+            <td><label for="serviceType"style="color: white">Loại dịch vụ:</label></td>
+            <td>
+                <select name="serviceType" id="serviceType">
+                    <option>Room</option>
+                    <option>House</option>
+                    <option>Villa</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="roomType"style="color: white">Loại phòng:</label></td>
+            <td>
+                <select name="roomType" id="roomType">
+                    <option>Normal</option>
+                    <option>Business</option>
+                    <option>VIP</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <button type="button" onclick="Booking()">Đặt Phòng</button>
+</form>
+<p style="color: aqua" id="view_information"></p>
+<p style="color: cornflowerblue" id="money"></p>
+<script>
+        let number1;
+        let number2;
+        let number3;
+    function Booking() {
+        let fullName = document.getElementById("fullName").value;
+        let identityNumber = document.getElementById("identityNumber").value;
+        let birthDay = document.getElementById("birthDay").value;
+        let email = document.getElementById("email").value;
+        let address = document.getElementById("address").value;
+        number1=address;
+        let customerType = document.getElementById("customerType").value;
+        number2=customerType;
+        let discoutRate = parseInt(document.getElementById("discoutRate").value);
+        let guestCount = document.getElementById("guestCount").value;
+        let rentDays = parseInt(document.getElementById("rentDays").value);
+        number3=rentDays;
+        let serviceType = document.getElementById("serviceType").value;
+        let roomType = document.getElementById("roomType").value;
+        let servicePrice;
+        switch (serviceType) {
+            case "Room":
+                servicePrice = 100;
+                break;
+            case "House":
+                servicePrice = 200;
+                break;
+            case "Villa":
+                servicePrice = 300;
+                break;
+        }
+        discoutRate = isNaN(discoutRate) ? 0 : discoutRate;
+        rentDays = isNaN(rentDays) ? 0 : rentDays;
+        var result = "<h2>Đặt Phòng Thành Công:</h2>";
+        result += "<p>Họ và tên: " + fullName + "</p>";
+        result += "<p>Số CMND: " + identityNumber + "</p>";
+        result += "<p>Ngày sinh: " + birthDay + "</p>";
+        result += "<p>E-mail: " + email + "</p>";
+        result += "<p>Địa chỉ: " + address + "</p>";
+        result += "<p>Hạng thành viên: " + customerType + "</p>";
+        result += "<p>Giảm giá: " + discoutRate + "%</p>";
+        result += "<p>Số lượng đi kèm: " + guestCount + "</p>";
+        result += "<p>Số ngày thuê: " + rentDays + "</p>";
+        result += "<p>Loại dịch vụ: " + serviceType + "</p>";
+        result += "<p>Loại phòng: " + roomType + "</p>";
+        result += "<button onclick='editForm()'>1.Chỉnh sửa thông tin</button>";
+        result += "<button onclick='totalmoney()'>2.Tổng tiền</button>";
+        document.getElementById("view_information").innerHTML = result;
+    }
+    function editForm() {
+        document.getElementById("Họ và tên").value = '';
+        document.getElementById("CMND").value = '';
+        document.getElementById("Ngày sinh").value = '';
+        document.getElementById("Email").value = '';
+        document.getElementById("Địa chỉ").value = '';
+        document.getElementById("Hạng thành viên").value = '';
+        document.getElementById("Giảm giá").value = '';
+        document.getElementById("Số lượng đi kèm").value = '';
+        document.getElementById("Số ngày thuê").value = '';
+        document.getElementById("Loại dịch vụ").value = '';
+        document.getElementById("Loại phòng").value = '';
+    }
+
+    function totalmoney() {
+            let monney = 0;
+            if (number2 ===  " Room"){
+                monney = 100;
+            }else if (number2 === "House"){
+                monney = 200;
+            }else if (number2 === "Villa "){
+                monney = 300;
+            }
+            let temp = 0;
+            if (number1 === "Đà Nẵng"){
+                temp +=20;
+            }else if (number1 ==="Huế"){
+                temp +=10;
+            }else if (number1 === "Quảng Nam"){
+                temp +=5;
+            }
+            document.getElementById("total money" + (monney*number2.value-temp));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+table{
+    font-family: arial;
+    width: 40%;
+}
+tr,th,td{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+;
+}
+div{
+    color: cornflowerblue;
+}
+

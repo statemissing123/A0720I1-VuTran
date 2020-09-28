@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string ="Tui tên là Viết Vũ";
+    string = string.trim();// bỏ kí tự trống ở 2 đầu
+    let index = 1;
+    for (let i = 0 ; i < string.length;i++){
+        if (string[i]== " " &&string[i+1] !== " "){
+            index++;
+        }
+    }
+    alert("Số từ trong chuỗi của bạn là: "+index);
+</script>
+</body>
+</html>

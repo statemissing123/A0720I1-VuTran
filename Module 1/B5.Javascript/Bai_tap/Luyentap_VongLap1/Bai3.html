@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        let a0 = 1;
+        let a1 = 1;
+        let temp;
+        let result = a0 + ' ' + a1 + ' ';
+        let count = 2;
+        let i = parseInt(prompt());
+        while (count <= 50) {
+            temp = a0 + a1;
+            a0 = a1;
+            a1 = temp;
+            result += temp + " ";
+            count++;
+        }
+
+</script>
+</body>
+</html>
+Demo fibonaci

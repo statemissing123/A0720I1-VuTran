@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a;
+    do {
+        a = parseInt(prompt("Điểm Kiểm tra"));
+    } while (a>10);
+    let b ;
+    do {
+        b = parseInt(prompt("Điểm thi giữa kì"));
+    } while (b > 10);
+    let c;
+    do {
+        c = parseInt(prompt("Điểm thi cuối kì"));
+    }while (c > 10)
+    d = (a*10)/10 + (b*30)/10 + (c*60)/10;
+    document.write(d+"%");
+    if (d < 40)
+        document.write("Loại F");
+    else if (d <= 54)
+        document.write("Loại D");
+    else if (d <= 69)
+        document.write("Loại C");
+    else if (d <= 79)
+        document.write("Loại B");
+    else if (d <= 100)
+        document.write("Loại A");
+
+
+</script>
+</body>
+</html>

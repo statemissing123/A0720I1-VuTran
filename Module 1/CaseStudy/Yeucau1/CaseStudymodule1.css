@@ -1,0 +1,14 @@
+body {
+    background-image:url(acess/anhvip.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 40px;
+    font-palette: light;
+    margin-left: 45%;
+}
+h3{
+    font-size: 30px;
+    margin-left: 100px;
+}

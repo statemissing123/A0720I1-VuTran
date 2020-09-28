@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function KiemTraNamNhuan(year) {
+        if (year %400==0){
+            return true;
+        }else if (year % 4 == 0 && year % 100 != 0){
+            return true;
+        }
+        return false;;
+        NhapThangNam()
+    }
+
+    function KiemTraThang(month,year) {
+        let dayinmonth;
+        switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:{
+            dayinmonth= 31 +"Ngày";
+            break;
+        }
+        case 4:
+        case 6:
+        case 9:
+        case 11:{
+            dayinmonth = 30 + "Ngày";
+            break;
+        }
+        case 2:{
+            let month = KiemTraNamNhuan(year);
+            if (month == 1){
+
+                alert(dayinmonth = 29 + "năm nhuần")
+            }else {
+                alert(dayinmonth = 28 + " Năm không nhuần")
+            }
+        }
+        }
+        return dayinmonth;
+        NhapThangNam();
+    }
+    function NhapThangNam(){
+        let d = new Date();
+        let curr_month = d.getMonth();
+        let curr_year = d.getFullYear();
+        document.write(curr_month + "/" + curr_year);
+    }
+
+
+</script>
+</body>
+</html>

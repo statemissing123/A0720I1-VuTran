@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let vu = [2,6,10,12,11,7,8,42,51,30];
+    let max = vu[0];
+    let index=0;
+    for (let i = 0 ; i < vu.length;i++){
+        if (vu[i]>max){
+            max = vu[i];
+            index=i;
+        }
+    }
+    alert("số lớn nhất là: " +max +"\n" +"ở vị trí thứ: "+index + " trong mảng" );
+</script>
+</body>
+</html>

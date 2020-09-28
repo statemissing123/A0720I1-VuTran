@@ -1,0 +1,5 @@
+Begin
+    Input A,B,C,D,E
+    E = A + B + C + D
+    Display E
+    END

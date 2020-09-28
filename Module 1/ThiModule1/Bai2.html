@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function EnterNumber(number1,number2) {
+        let total = 0;
+        let total2 = 0;
+        for (let i = 1 ; i < number1 ; i++){
+            if (number1 %i == 0 && number1 > 0 ){
+                total +=i;
+            }
+        }
+        for (let j = 1; j < number2 ; j++){
+            if (number2 %j == 0 && number2 > 0 ){
+                total2 += j;
+            }
+        }
+        if (total == number2 && total2 == number1 ){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    let check = EnterNumber(parseInt(prompt("EnterNumber1: ")),parseInt(prompt("EnterNumber2: ")));
+    alert(check);
+
+</script>
+</body>
+</html>

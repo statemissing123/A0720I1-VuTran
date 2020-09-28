@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array =[6.7,4.5,3.2];
+    function findMax(array) {
+        let max = array[0];
+        for (let j = 0;j<array.length;j++){
+            if (array[j]> max ){
+                max = array[j];
+            }
+        }
+        return max;
+    }
+   alert(findMax(array));
+</script>
+</body>
+</html>

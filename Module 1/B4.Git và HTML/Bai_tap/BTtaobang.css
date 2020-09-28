@@ -1,0 +1,10 @@
+table,th,td{
+    border-collapse: collapse;
+    padding: 8px
+}
+th{
+    background-color: yellow;
+}
+th,td{
+    text-align: left;
+}

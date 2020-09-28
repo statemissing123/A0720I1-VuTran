@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<img src="Images/Hinh%201a.png" id="carA" onclick="onchangeImage(1)" width="180 px" height="500 px">
+<img src="Images/Hinh%201b.png" id="carB" onclick="onchangeImage(2)" width="180 px" height="500 px">
+<img src="Images/Hinh%201c.png" id="carC" onclick="onchangeImage(3)" width="180 px" height="500 px">
+<img src="Images/Hinh%201d.png" id="carD" onclick="onchangeImage(4)" width="180 px" height="500 px">
+<img src="Images/Hinh%201e.png" id="carE" onclick="onchangeImage(5)" width="180 px" height="500 px">
+</body>
+<script>
+    let carA=document.getElementById("carA");
+    let carB=document.getElementById("carB");
+    let carC=document.getElementById("carC");
+    let carD=document.getElementById("carD");
+    let carE=document.getElementById("carE");
+
+    function onchangeImage(number) {
+        switch (number) {
+            case 1 : {
+                if(carA.getAttribute('src') ==="Images/Hinh%201a.png") {
+                    carA.src = "Images/Hinh%202a.png";
+                } else if(carA.getAttribute('src') ==="Images/Hinh%202a.png") {
+                    carA.src = "Images/Hinh%203a.png";
+                }  else if(carA.getAttribute('src') ==="Images/Hinh%203a.png") {
+                    carA.src = "Images/Hinh%201a.png";
+                }
+                break;
+            }
+            case 2: {
+                if(carB.getAttribute('src') ==="Images/Hinh%201b.png") {
+                    carB.src = "Images/Hinh%202b.png";
+                } else if(carB.getAttribute('src') ==="Images/Hinh%202b.png") {
+                    carB.src = "Images/Hinh%203b.png";
+                }  else if(carB.getAttribute('src') ==="Images/Hinh%203b.png") {
+                    carB.src = "Images/Hinh%201b.png";
+                }
+                break;
+            }
+            case 3 : {
+                if(carC.getAttribute('src') ==="Images/Hinh%201c.png") {
+                    carC.src = "Images/Hinh%202c.png";
+                } else if(carC.getAttribute('src') ==="Images/Hinh%202c.png") {
+                    carC.src = "Images/Hinh%203c.png";
+                }  else if(carC.getAttribute('src') ==="Images/Hinh%203c.png") {
+                    carC.src = "Images/Hinh%201c.png";
+                }
+                break;
+            }
+            case 4 : {
+                if(carD.getAttribute('src') ==="Images/Hinh%201d.png") {
+                    carD.src = "Images/Hinh%202d.png";
+                } else if(carD.getAttribute('src') ==="Images/Hinh%202d.png") {
+                    carD.src = "Images/Hinh%203d.png";
+                }  else if(carD.getAttribute('src') ==="Images/Hinh%203d.png") {
+                    carD.src = "Images/Hinh%201d.png";
+                }
+                break;
+            }
+            case 5 : {
+                if(carE.getAttribute('src') ==="Images/Hinh%201e.png") {
+                    carE.src = "Images/Hinh%202e.png";
+                } else if(carE.getAttribute('src') ==="Images/Hinh%202e.png") {
+                    carE.src = "Images/Hinh%203e.png";
+                }  else if(carE.getAttribute('src') ==="Images/Hinh%203e.png") {
+                    carE.src = "Images/Hinh%201e.png";
+                }
+                break;
+            }
+        }
+        checkImage();
+    }
+    function checkImage() {
+        if(carA.getAttribute('src') ==="Images/Hinh%202a.png"
+            && carB.getAttribute('src') ==="Images/Hinh%202b.png"
+            && carC.getAttribute('src') ==="Images/Hinh%202c.png"
+            && carD.getAttribute('src') ==="Images/Hinh%202d.png"
+            && carE.getAttribute('src') ==="Images/Hinh%202e.png") {
+            alert("Chúc Mừng Bạn")
+            return;
+        }
+    }
+</script>
+</html
