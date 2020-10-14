@@ -2,17 +2,17 @@ package B6_Ke_Thua.Thuc_Hanh.Circle;
 
 import B6_Ke_Thua.Thuc_Hanh.Shape;
 
-public class Circle extends Shape {
+public class Circle_TH extends Shape {
     private double radius = 1.0;
 
-    public Circle() {
+    public Circle_TH() {
     }
 
-    public Circle(double radius) {
+    public Circle_TH(double radius) {
         this.radius = radius;
     }
 
-    public Circle(double radius, String color, boolean filled) {
+    public Circle_TH(double radius, String color, boolean filled) {
         super(color, filled);
         this.radius = radius;
     }
