@@ -15,7 +15,7 @@ public class MyStackk {
             intArr[i] = intStack.pop();
         }
         for (int i = 0; i < intArr.length; i++) {
-            System.out.print(+intArr[i] + "\t");
+            System.out.print(intArr[i] + "\t");
         }
     }
 }
