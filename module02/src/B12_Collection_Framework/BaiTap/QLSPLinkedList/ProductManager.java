@@ -1,13 +1,14 @@
-package B12_Collection_Framework.BaiTap.QuanLiSanPham;
+package B12_Collection_Framework.BaiTap.QLSPLinkedList;
 
-import B10_DSA_List.BaiTap.ArrayList.MyList;
+import B12_Collection_Framework.BaiTap.QuanLiSanPham.Product;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class ProductManager<product> {
     static Scanner scanner = new Scanner(System.in);
-    static ArrayList<Product> productList = new ArrayList<Product>();
+    static LinkedList<Product> productList = new LinkedList<>();
     private static int id;
     private static String name;
     private static long price;
@@ -20,7 +21,7 @@ public class ProductManager<product> {
                 "4. show product" + "\n" +
                 "5. search product" + "\n" +
                 "6. sort product" + "\n" +
-                "7. Exit"+ " \n" +
+                "7. Exit" + " \n" +
                 "What do you want to do, please choose: ");
         int choose = scanner.nextInt();
         switch (choose) {
@@ -44,20 +45,20 @@ public class ProductManager<product> {
                 searchproduct();
                 break;
             }
-            case 6:{
+            case 6: {
                 System.out.println("You want to Sort up or down " + "\n" +
                         "1. ascending " + "\n" +  // tăng dần
                         "2. decrease ");   // giảm dần
                 int sort = scanner.nextInt();
-                switch (sort){
+                switch (sort) {
                     case 1:
-                        for (Product product:productList) {
+                        for (B12_Collection_Framework.BaiTap.QuanLiSanPham.Product product : productList) {
                             System.out.println(product);
                         }
                         System.out.println(" ");
                         break;
                     case 2:
-                        for (int i = productList.size()-1;i >=0;i--){
+                        for (int i = productList.size() - 1; i >= 0; i--) {
                             System.out.println(productList.get(i));
                         }
                         System.out.println(" ");
@@ -74,13 +75,16 @@ public class ProductManager<product> {
     }
 
     public static void addproduct() {
-        id +=1;
+        int id;
+        String name;
+        System.out.println("1. ID: ");
+        id = scanner.nextInt();
         System.out.println("2. Name Product: ");
         scanner.skip("\n");
         name = scanner.nextLine();
         System.out.println("3. Price Product");
         price = scanner.nextLong();
-        productList.add(new Product(id, name, price));
+        productList.add(new B12_Collection_Framework.BaiTap.QuanLiSanPham.Product(id, name, price));
         System.out.println("Successfully");
         menuProduct();
     }
@@ -93,7 +97,7 @@ public class ProductManager<product> {
         String nameNew = scanner.nextLine();
         System.out.println("Price: ");
         long priceNew = scanner.nextLong();
-        for (Product product : productList) {
+        for (B12_Collection_Framework.BaiTap.QuanLiSanPham.Product product : productList) {
             if (id == product.getId()) {
                 product.setName(nameNew);
                 product.setPrice(priceNew);
@@ -111,7 +115,7 @@ public class ProductManager<product> {
     public static void deleteproduct() {
         System.out.println("Choose ID want to delete Product: ");
         id = scanner.nextInt();
-        for (Product product : productList) {
+        for (B12_Collection_Framework.BaiTap.QuanLiSanPham.Product product : productList) {
             if (id == product.getId()) {
                 productList.remove(product);
                 System.out.println("Delete Successfully ");
@@ -125,7 +129,7 @@ public class ProductManager<product> {
     }
 
     public static void showproduct() {
-        for (Product product : productList) {
+        for (B12_Collection_Framework.BaiTap.QuanLiSanPham.Product product : productList) {
             System.out.println("ID Product: " + product.getId() +
                     ", Name Product: '" + product.getName() + '\'' +
                     ", Price Product: " + product.getPrice());
@@ -137,7 +141,7 @@ public class ProductManager<product> {
         System.out.println("Enter Name Product: ");
         scanner.skip("\n");
         String name = scanner.nextLine();
-        for (Product product : productList) {
+        for (B12_Collection_Framework.BaiTap.QuanLiSanPham.Product product : productList) {
             if (product.getName().equalsIgnoreCase(name)) {
                 System.out.println(product.toString());
                 System.out.println(" ");
@@ -149,7 +153,7 @@ public class ProductManager<product> {
 
 
     public static void main(String[] args) {
-        productList.add(new Product(1, "Iphone6", 30000));
+        productList.add(new B12_Collection_Framework.BaiTap.QuanLiSanPham.Product(1, "Iphone6", 30000));
         productList.add(new Product(2, "Iphone6s", 40000));
         System.out.println(" ");
         menuProduct();

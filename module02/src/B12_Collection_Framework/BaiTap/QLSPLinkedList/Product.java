@@ -1,4 +1,4 @@
-package B12_Collection_Framework.BaiTap.QuanLiSanPham;
+package B12_Collection_Framework.BaiTap.QLSPLinkedList;
 
 public class Product {
     private int id;
@@ -6,7 +6,8 @@ public class Product {
     private long price;
 
 
-    public Product(){}
+    public Product() {
+    }
 
     public Product(int id, String name, long price) {
         this.id = id;
@@ -44,5 +45,4 @@ public class Product {
                 ", Name Product: '" + name + '\'' +
                 ", Price Product: " + price;
     }
-
 }
