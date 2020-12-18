@@ -1,0 +1,86 @@
+#main{
+    font-family: Arial;
+    font-size: 14px;
+}
+#main_left{
+    margin-top: 10%;
+    margin-left:15% ;
+    float: left;
+
+}
+#content_Facebook{
+    font-size: 50px;
+}
+.input_taikhoan{
+    background-color: #fff;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 20px 10px;
+    width: 360px;
+    margin: 10px;
+}
+.input_matkhau{
+    background-color: #fff;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 20px 10px;
+    width: 360px;
+    margin: 10px;
+}
+.input_DangNhap{
+    font-size: 20px;
+    color: white;
+    background-color: #008CBA;
+    opacity: 0.8;
+    border: 1px solid #008CBA;
+    border-radius: 8px;
+    padding: 17px 10px;
+    margin: 10px;
+}
+
+.input + .input{
+    margin-top: 20px;
+}
+
+#main_right{
+    width: 400px;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 3%;
+    border: 1px solid #dddddd;
+    border-radius:10px ;
+}
+.input_quenmatkhau{
+    font-size: 15px;
+    margin-left: 37%;
+    color: #008CBA;
+}
+.gachduoi{
+    border-bottom: 1px solid whitesmoke;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.input_taotaikhoan{
+    width: 60%;
+    font-size: 17px;
+    color: white;
+    background-color: green;
+    opacity: 0.8;
+    border: 1px solid #008CBA;
+    border-radius: 10px;
+    padding: 20px 5px;
+    margin: 10px;
+    margin-left: 20%;
+}
+#main_bottom{
+    clear: both;
+    margin-left: 50%;
+}

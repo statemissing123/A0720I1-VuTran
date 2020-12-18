@@ -1,0 +1,22 @@
+#header{
+    height: 50px;
+    background-color: #000000;
+    color: gray;
+    border: 1px solid #CDCDCD;
+}
+#header li{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    list-style: none;
+
+}
+#header ul li:hover ul{
+    visibility: visible;
+}
+#header ul ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
