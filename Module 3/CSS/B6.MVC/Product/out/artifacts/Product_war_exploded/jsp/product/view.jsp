@@ -12,18 +12,20 @@
 </head>
 <body>
     <h2>Infomation Manga</h2>
-    <table>
+    <table border="1">
         <tr>
-            <td>Name</td>
-            <td><a href="product?action=view&id=${manga.id}">${manga.nameManga}</a></td>
-        </tr>
-        <tr>
+            <td>Name Manga</td>
             <td>Author</td>
-            <td>${manga.author}</td>
+            <td>Nation</td>
+            <td>Chapter</td>
+            <td>Comic genre</td>
         </tr>
         <tr>
-            <td>Nation</td>
-            <td>${manga.nation}</td>
+            <td>${productManga.nameManga}</td>
+            <td>${productManga.nation}</td>
+            <td>${productManga.author}</td>
+            <td>${productManga.episodes}</td>
+            <td><p>Phiêu Lưu</p></td>
         </tr>
     </table>
     <button><a href="product">Back To List</a></button>

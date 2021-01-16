@@ -10,14 +10,17 @@
 <html>
 <head>
     <title>List Manga</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="js/product/search.js" type="text/javascript"></script>
 </head>
 <body>
     <h1>Danh Sách Truyện Tranh</h1>
-    <input type="search" id="search" placeholder="Search Name Manga" >
-    <input type="submit" id="submit" value="Search">
+    <input type="text" id="productName" placeholder="Search Name Manga" >
+    <input type="button" id="search" value="Search">
     <p>
         <a href="product?action=create">Create new Manga</a>
     </p>
+    <div id="result">
     <table border="1">
         <tr>
             <td>ID</td>
@@ -42,5 +45,6 @@
         </c:forEach>
 
     </table>
+    </div>
 </body>
 </html>

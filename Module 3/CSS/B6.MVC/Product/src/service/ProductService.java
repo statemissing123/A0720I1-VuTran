@@ -13,5 +13,5 @@ public interface ProductService {
 
     void update(int id, ProductManga productManga);
     void remove(int id);
-//    List<ProductManga> findByName(String nameManga);
+    List<ProductManga> findByName(String nameManga);
 }

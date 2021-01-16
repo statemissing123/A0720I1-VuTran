@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ProductServiceImpl implements ProductService {
 
@@ -41,5 +42,13 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void remove(int id) {
         productMangaMap.remove(id);
+    }
+
+    @Override
+    public List<ProductManga> findByName(String nameManga) {
+        return productMangaMap.values()
+                .stream()
+                .filter(productManga -> productManga.getNameManga().toLowerCase().contains(nameManga.toLowerCase()))
+                .collect(Collectors.toList());
     }
 }
