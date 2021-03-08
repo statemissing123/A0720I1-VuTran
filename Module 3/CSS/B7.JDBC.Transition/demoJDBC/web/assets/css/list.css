@@ -1,0 +1,13 @@
+#productName{
+    margin-right: 30px;
+    background-color: #fff;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 10px 10px;
+    width: 360px;
+}
+#search{
+    padding: 11px 20px;
+    margin-bottom: 5px;
+}

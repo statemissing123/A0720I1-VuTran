@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcba36fc-57f9-420f-877d-2549f84ce334" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Customer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/.idea/artifacts/Customer_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/Customer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/WEB-INF/classes/controller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/WEB-INF/classes/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/WEB-INF/classes/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/WEB-INF/classes/service/customerServiceimpl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/jsp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/jsp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/jsp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/artifacts/Customer_war_exploded/jsp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/production/Customer/controller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/production/Customer/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/production/Customer/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/out/production/Customer/service/customerServiceimpl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/src/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/src/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/src/service/customerServiceimpl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/web/jsp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/web/jsp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/web/jsp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Customer/web/jsp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baithi/baithi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baithi/web/jsp/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baithi/web/jsp/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baithi/web/jsp/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baithi/web/jsp/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baithi/web/jsp/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/.idea/B7.JDBC.Transition.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/Customer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/Customer/.idea/Customer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/Customer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/Customer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/Customer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/.idea/artifacts/ThucHanh_CallProcdue_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/ThucHanh_CallProcdue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/dao/IUserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/dao/impl/UserDAOimpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/classes/utils/DBConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/js/Jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/js/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/jsp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/jsp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/jsp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/jsp/user/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/artifacts/ThucHanh_CallProcdue_war_exploded/jsp/user/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/controller/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/dao/IUserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/dao/impl/UserDAOimpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/out/production/ThucHanh_CallProcdue/utils/DBConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/dao/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/dao/impl/UserDAOimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/src/utils/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/js/Jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/js/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/jsp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/jsp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/jsp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/jsp/user/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/ThucHanh_CallProcdue/web/jsp/user/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/artifacts/demoMVC_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/demoJDBC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/demoMVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/controller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/dao/ICustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/classes/utils/DBConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/jsp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/jsp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/jsp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/jsp/customer/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/artifacts/demoMVC_war_exploded/jsp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/controller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/dao/ICustomerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/dao/impl/CustomerDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/out/production/demoMVC/utils/DBConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/dao/ICustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/dao/impl/CustomerDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/src/utils/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/assets/css/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/assets/js/customer/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/jsp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/jsp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/jsp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/jsp/customer/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSS/B7.JDBC.Transition/demoJDBC/web/jsp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/Furama.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/src/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/src/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/src/model/Customers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/src/model/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/src/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/src/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/web/jsp/customers/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama/web/jsp/customers/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SQL/TK_MKMysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SQL/DemoJDBC.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../SQL/DemoJDBC.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SQL/truyentranh.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../SQL/truyentranh.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1nsSGVdti0oN5ZSPMkzdXnqk1L4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/baithi" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcba36fc-57f9-420f-877d-2549f84ce334" name="Default Changelist" comment="" />
+      <created>1612177209837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612177209837</updated>
+      <workItem from="1612177214179" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1612177244115">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612177244115" />
+  </component>
+</project>

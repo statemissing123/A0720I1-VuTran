@@ -6,16 +6,19 @@ create table truyen(
     HinhAnhTruyen mediumtext,
     LoaiTruyen nvarchar(45),
     SoChuong nvarchar(45),
+    Quocgia nvarchar(45),
     TacGia nvarchar(45)
 );
 create table chuong(
-	ChuongID int auto_increment primary key,
-	chuongSo nvarchar(45),
+	ChuongID int  primary key,
+	chuongSo int,
     chuongten nvarchar(45),
+    IDtruyen int auto_increment,
     foreign key (IDtruyen) references truyen(IDtruyen)
 );
 create table chuong_hinhanh(
-	chuong_Hinhanh_id int auto_increment primary key,
+	chuong_Hinhanh_id int  primary key,
     chuong_hinhanh_tenhinh mediumtext,
+    ChuongID int,
     foreign key(ChuongId) references chuong(ChuongID)
 );

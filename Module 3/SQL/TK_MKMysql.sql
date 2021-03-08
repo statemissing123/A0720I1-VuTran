@@ -1,0 +1,2 @@
+CREATE USER 'vietvu'@'%' IDENTIFIED BY '123123';
+GRANT ALL PRIVILEGES ON *.* TO 'vietvu'@'%';
