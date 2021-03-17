@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Blog new</title>
+</head>
+<body>
+<h3>Create Blog</h3>
+<form th:object="${blog}" action="/create" method="post">
+    <p>TitleBlog: <input type="text" th:field="*{titleBlog}"></p>
+    <p>DescBlog: <input  style="padding: 50px" type="text" th:field="*{descBlog}"></p>
+    <input type="submit" value="create">
+</form>
+<a style="navbutton_background_color: green" th:href="@{/}">Back to List</a>
+</body>
+</html>

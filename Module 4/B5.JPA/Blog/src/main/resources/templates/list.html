@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Viet Vu</title>
+</head>
+<body>
+    <h3>Web come to blog VV-Stiz</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title Blog</th>
+            <th>Desc Blog</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="blog : ${blogs}">
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.titleBlog}"></td>
+            <td th:text="${blog.descBlog}"></td>
+            <td>
+                <a th:href="@{/delete/__${blog.id}__}">Delete</a>
+                <a th:href="@{/edit/__${blog.id}__}">Edit</a>
+            </td>
+        </tr>
+        </tbody>
+        <a th:href="@{/create}">Create Blog</a>
+    </table>
+</body>
+</html>
