@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin Sản Phẩm</title>
+</head>
+<body>
+<form th:object="${product}">
+    <table>
+        <tr>
+            <td>Tên sản phẩm:</td>
+            <td th:text="${product.nameProduct}"></td>
+        </tr>
+        <tr>
+            <td>Giá Tiền:</td>
+            <td th:text="${#numbers.formatDecimal(product.price, 0, 'POINT', 0, 'COMMA')}"></td>
+        </tr>
+        <tr>
+            <td><a th:href="@{/addproduct/__${product.id}__}">Thêm vào giỏ</a></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
