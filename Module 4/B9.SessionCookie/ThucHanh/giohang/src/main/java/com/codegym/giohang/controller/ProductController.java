@@ -63,7 +63,7 @@ public class ProductController {
     @GetMapping(value = "/delete/{id}")
     public String deleteCart(@ModelAttribute("cart")Cart cart,
                              @PathVariable int id){
-        productService.delete(id);
+        cart.getCartMap().remove(productService.findById(id));
         return "redirect:/cart";
     }
 

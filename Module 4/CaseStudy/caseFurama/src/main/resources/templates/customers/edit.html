@@ -1,0 +1,40 @@
+<form th:action="@{/customers/edit/__${editCustomer.id}__}" th:object="${editCustomer}"  xmlns:th="http://www.thymeleaf.org" method="post">
+<table xmlns:th="http://www.thymeleaf.org">
+    <tr>
+        <th>ID</th>
+        <td id="idCustomer" th:text="${editCustomer.id}" th:value="${editCustomer.id}"></td>
+    </tr>
+    <tr>
+        <th>Tên Khách Hàng:</th>
+        <td><input type="text" th:field="*{name}"></td>
+    </tr>
+    <tr>
+        <th>Ngày Sinh:</th>
+        <td><input type="text" th:field="*{birthday}"></td>
+    </tr>
+    <tr>
+        <th>Giới Tính:</th>
+        <td><input type="text" th:field="*{gender}"></td>
+    </tr>
+    <tr>
+        <th>CM Nhân Dân:</th>
+        <td><input type="text" th:field="*{cmnd}"></td>
+    </tr>
+    <tr>
+        <th>Số Điện Thoại:</th>
+        <td><input type="text" th:field="*{phone}"></td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td><input type="text" th:field="*{email}"></td>
+    </tr>
+    <tr>
+        <th>Địa Chỉ:</th>
+        <td><input type="text" th:field="*{address}"></td>
+    </tr>
+    <tr>
+        <td><a th:href="@{/customers/}">Danh sách khách hàng</a></td>
+    </tr>
+</table>
+    <input type="submit" value="Lưu">
+</form>

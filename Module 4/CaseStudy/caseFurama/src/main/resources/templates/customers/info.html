@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Customer</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<h2>Thông tin của khách hàng</h2>
+    <div id="infoCustomer">
+        <table>
+            <tr>
+                <th>ID:</th>
+                <td id="idCustomer" th:text="${infoCustomer.id}" th:value="${infoCustomer.id}"></td>
+            </tr>
+            <tr>
+                <th>Tên Khách Hàng:</th>
+                <td th:text="${infoCustomer.name}"></td>
+            </tr>
+            <tr>
+                <th>Ngày Sinh:</th>
+                <td th:text="${infoCustomer.birthday}"></td>
+            </tr>
+            <tr>
+                <th>Giới Tính:</th>
+                <td th:text="${infoCustomer.gender}"></td>
+            </tr>
+            <tr>
+                <th>CM Nhân Dân:</th>
+                <td th:text="${infoCustomer.cmnd}"></td>
+            </tr>
+            <tr>
+                <th>Số Điện Thoại:</th>
+                <td th:text="${infoCustomer.phone}"></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td th:text="${infoCustomer.email}"></td>
+            </tr>
+            <tr>
+                <th>Địa Chỉ:</th>
+                <td th:text="${infoCustomer.address}"></td>
+            </tr>
+
+            <tr>
+                <td><a th:href="@{/customers/}">Danh sách khách hàng</a></td>
+            </tr>
+        </table>
+        <button type="button" id="editCustomer">Sửa</button>
+    </div>
+<script>
+    $(document).ready(function () {
+        $("#editCustomer").click(function (event) {
+            let id =  document.getElementById("idCustomer").textContent;
+            let editurl= "/customers/edit/" + id;
+            $.ajax({
+                type:"GET",
+                url:editurl,
+                dataType: "HTML",
+                success:function (data) {
+                    $("#infoCustomer").html(data)
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>
