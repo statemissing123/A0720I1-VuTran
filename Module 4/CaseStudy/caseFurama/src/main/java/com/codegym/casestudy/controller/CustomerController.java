@@ -7,6 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -37,9 +39,13 @@ public class CustomerController {
     }
 
     @PostMapping("/create")
-    public String createCustomer(@ModelAttribute("createCustomer") Customer customer) {
-        customerService.save(customer);
-        return "redirect:/customers/";
+    public String createCustomer(@Validated @ModelAttribute("createCustomer") Customer customer, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "/customers/create";
+        } else {
+            customerService.save(customer);
+            return "redirect:/customers/";
+        }
     }
 
     //Thông tin customer//
@@ -62,7 +68,6 @@ public class CustomerController {
     //Sửa Customer//
     @GetMapping("/edit/{id}")
     public ModelAndView getFormEdit(@PathVariable int id){
-        System.out.println("Hello");
         return new ModelAndView("customers/edit","editCustomer",customerService.findById(id));
     }
     @PostMapping("/edit/{id}")

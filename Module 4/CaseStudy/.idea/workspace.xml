@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5aa6edaa-4fb4-4383-b0d8-f03baa19aaae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/Repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/Repository/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/Service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/Service/ServicesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/Service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/Service/impl/ServicesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/fragment/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/services/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/services/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/model/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/java/com/codegym/casestudy/model/service/FuramaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/resources/static/css/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/static/css/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseFurama/src/main/resources/templates/customers/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1rnMqQgrUt6d8qYdMCLzaB4DNzx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/caseFurama" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5aa6edaa-4fb4-4383-b0d8-f03baa19aaae" name="Default Changelist" comment="" />
+      <created>1619607590943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619607590943</updated>
+      <workItem from="1619607594692" duration="85000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1619607608290">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619607608290" />
+  </component>
+</project>

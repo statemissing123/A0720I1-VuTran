@@ -16,16 +16,15 @@
             integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
             crossorigin="anonymous"></script>
 <!--    <link rel="stylesheet" href="css/list.css">-->
-    <link rel="stylesheet" href="../../static/css/list.css">
+    <link rel="stylesheet" href="/static/css/list.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <body>
 <h2 style="margin-left: 450px;color: yellow">Danh sách khách hàng</h2>
-<form>
+<form class="home">
     <input type="text" id="productName" name="s" placeholder="Nhập tên khách hàng" >
     <input id="search" class="btn btn-outline-info" type="submit" value="Tìm">
+    <span><a th:href="@{/home/}" class='fas fa-home' style='font-size:48    px;color:red;display: flex'></a></span>
 </form>
     <table class="table table-bordered">
         <thead>

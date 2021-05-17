@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragment/layout::headerfield}">
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+</head>
+<body>
+<div id="header">
+    <span class="header-logo">
+        <h3>Cinema Movie</h3>
+    </span>
+</div>
+<nav id="navigation">
+    <div class="navigation-flex">
+        <span class="navigation-home">
+            <ul>
+                <li><a class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true" th:href="@{/cinema}">Home</a></li>
+                <li><a class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true"
+                       th:href="@{/customers/}">Customer</a></li>
+                <li><a class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true"
+                       th:href="@{/employees/}">Employee</a></li>
+                <li><a class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true"
+                       th:href="@{/servicess/}">Service</a></li>
+                <li><a class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true"
+                       th:href="@{/contract/}">Contract</a></li>
+            </ul>
+        </span>
+    </div>
+</nav>
+</body>
+</html>

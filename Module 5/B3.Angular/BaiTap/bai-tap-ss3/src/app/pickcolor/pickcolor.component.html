@@ -1,0 +1,8 @@
+<p>pickcolor works!</p>
+<div>
+  <label>Chọn màu:</label>
+  <input type="color" [(ngModel)]="background" >
+</div>
+<br>
+<p>Output:</p>
+<div style="width: 200px; height: 100px" [style.background]="background" ></div>

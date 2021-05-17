@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Service {
+public class FuramaService {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

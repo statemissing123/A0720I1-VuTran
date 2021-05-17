@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Thông Tin Khuyến Mãi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+<div>
+    <h2>Danh sách khuyến mãi</h2>
+    <a class="btn btn-success" th:href="@{/cinema/create}">Thêm Khuyến mãi</a>
+    <input type="text" id="productName" name="s"  >
+    <input id="search" class="btn btn-outline-info" type="submit" value="Tìm">
+</div>
+<table class="table table-bordered">
+    <thead class="font-weight-bold text-center">
+        <td>Tiêu đề</td>
+        <td>Thời gian bắt đầu</td>
+        <td>Thời gian kết thúc</td>
+        <td>Mức giảm giá</td>
+        <td>Chi tiết</td>
+        <td>Sửa</td>
+        <td>Xóa</td>
+    </thead>
+    <tbody>
+    <tr th:each="cinema : ${cinemas} ">
+        <td th:text="${cinema.title}"></td>
+        <td th:text="${cinema.timeStars}"></td>
+        <td th:text="${cinema.timeEnd}"></td>
+        <td th:text="${#numbers.formatDecimal(cinema.price, 0, 'POINT', 0, 'COMMA')}"></td>
+        <td th:text="${cinema.detail}"></td>
+        <td><a class="btn btn-danger" th:href="@{/cinema/edit/__${cinema.getId()}__}">Sửa</a></td>
+        <td><a class="btn btn-danger" th:href="@{/cinema/delete/__${cinema.getId()}__}">Xóa</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{'/cinema/'(page=${cinemas.number - 1})}" th:if="${cinemas.hasPrevious()}" class="btn btn-secondary">Previous</a>
+    <span class="btn btn-light" th:text="${cinemas.number + 1}"></span>/<span class="btn btn-light" th:text="${cinemas.totalPages}"></span>
+    <a th:href="@{'/cinema/'(page=${cinemas.number + 1})}" th:if="${cinemas.hasNext()}" class="btn btn-secondary">Next</a>
+</div>
+</body>
+</html>
