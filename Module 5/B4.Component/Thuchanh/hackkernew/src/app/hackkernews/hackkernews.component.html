@@ -1,0 +1,21 @@
+<p>hackkernews works!</p>
+<h2>Today's article</h2>
+<div style="display: flex">
+  <div>
+    <textarea class="form-control" [(ngModel)]="article.title" ></textarea>
+    <br>
+    <textarea class="form-control" [(ngModel)]="article.url"></textarea>
+    <button class="btn btn-primary" (click)="addArticle()">Add</button>
+  </div>
+<div></div>
+</div>
+
+<br>
+<hr>
+<div *ngFor="let art of articles">
+  <a href="{{art.url}}" target="_blank">{{art.title}}</a>
+  <app-likes></app-likes>
+</div>
+<hr>
+
+
