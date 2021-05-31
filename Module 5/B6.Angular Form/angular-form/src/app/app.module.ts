@@ -7,13 +7,15 @@ import { TodoComponent } from './todo/todo.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { RegisterFinalComponent } from './register-final/register-final.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    RegisterFinalComponent
   ],
     imports: [
         BrowserModule,
