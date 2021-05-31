@@ -1,0 +1,9 @@
+<h1>Edit Product</h1>
+
+<form [formGroup]="formEdit" (submit)="editProduct(this.formEdit.value,this.id)"  >
+  <label>Name Product: </label>
+  <input type="text" formControlName="name">
+  <label>Detail: </label>
+  <input type="text" formControlName="detail">
+  <button type="submit">Save Product</button>
+</form>

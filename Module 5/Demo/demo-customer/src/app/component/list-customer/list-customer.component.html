@@ -1,0 +1,18 @@
+<a class="btn btn-success" [routerLink]="['/create-customer/']">Add New Customer</a>
+<table class="table table-striped">
+  <tr>
+      <th>ID</th>
+      <th>Name Customer</th>
+      <th>BirthDay</th>
+      <th>Address</th>
+  </tr>
+  <tr *ngFor="let customer of listCustomer">
+    <td>{{customer.id}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.birthday}}</td>
+    <td>{{customer.address}}</td>
+    <td>
+      <button class="btn btn-primary" >Info</button>
+    </td>
+  </tr>
+</table>
