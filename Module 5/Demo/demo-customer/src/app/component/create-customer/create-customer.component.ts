@@ -29,12 +29,12 @@ export class CreateCustomerComponent implements OnInit {
 
   initForm() {
     this.createForm = new FormGroup({
-        name: new FormControl(),
-        birthday : new FormControl(),
-        card: new FormControl(),
-        phone: new FormControl(),
-        email: new FormControl(),
-        address: new FormControl()
+      name: new FormControl("",[Validators.required,Validators.minLength(6)]),
+      birthday : new FormControl("",[Validators.required]),
+      card: new FormControl("",[Validators.required,Validators.minLength(9),Validators.maxLength(12)]),
+      phone: new FormControl("",[Validators.required,Validators.pattern(/^\+84\d{9,10}$/)]),
+      email: new FormControl("",[Validators.required,Validators.email]),
+      address: new FormControl("",[Validators.required])
       })
   }
   onSubmit() {

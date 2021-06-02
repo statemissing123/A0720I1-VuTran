@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import {ListCustomerComponent} from './component/list-customer/list-customer.component';
 import {CreateCustomerComponent} from './component/create-customer/create-customer.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { EditCustomerComponent } from './component/edit-customer/edit-customer.component';
+import { InfoCustomerComponent } from './component/info-customer/info-customer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateCustomerComponent,
-    ListCustomerComponent
+    ListCustomerComponent,
+    EditCustomerComponent,
+    InfoCustomerComponent
   ],
   imports: [
     BrowserModule,

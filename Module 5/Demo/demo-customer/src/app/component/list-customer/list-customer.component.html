@@ -1,3 +1,4 @@
+<h1 style="text-align: center;color: yellow;font-family:Cambria">List Customer</h1>
 <a class="btn btn-success" [routerLink]="['/create-customer/']">Add New Customer</a>
 <table class="table table-striped">
   <tr>
@@ -5,6 +6,7 @@
       <th>Name Customer</th>
       <th>BirthDay</th>
       <th>Address</th>
+      <th>Action</th>
   </tr>
   <tr *ngFor="let customer of listCustomer">
     <td>{{customer.id}}</td>
@@ -12,7 +14,9 @@
     <td>{{customer.birthday}}</td>
     <td>{{customer.address}}</td>
     <td>
-      <button class="btn btn-primary" >Info</button>
+      <button class="btn btn-primary" [routerLink]="['/info-customer/',customer.id]">Info</button>
+      <button class="btn btn-danger" (click)="deleteCustomer(customer.id)">Delete</button>
+      <button class="btn btn-secondary" [routerLink]="['/edit-customer/',customer.id]">Edit</button>
     </td>
   </tr>
 </table>

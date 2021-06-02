@@ -1,16 +1,13 @@
-<h1 style="color: green;text-align: center" >Create Customer</h1>
-<form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="col-md-6 offset-md-3" >
+<h1 style="text-align: center;color: dodgerblue">Edit Customer</h1>
+<form [formGroup]="formEdit" (ngSubmit)="editCustomer()" class="col-md-6 offset-md-3" >
   <div class="form-group row">
     <label class="col">
       Name Customer
       <input type="text" class="form-control" formControlName="name">
     </label>
   </div>
-  <div class="alert alert-danger" role="alert" *ngIf="createForm.get('name').invalid && createForm.get('name').touched">
-    Invalid Name!
-  </div>
 
-<!------------------------------->
+  <!------------------------------->
 
   <div class="form-group row">
     <label class="col">
@@ -25,9 +22,6 @@
       <input type="number" class="form-control" formControlName="card">
     </label>
   </div>
-  <div class="alert alert-danger" role="alert" *ngIf="createForm.get('card').invalid && createForm.get('card').touched">
-    Invalid Card!
-  </div>
   <!------------------------------->
 
   <div class="form-group row">
@@ -35,10 +29,6 @@
       Number Phone
       <input type="tel" class="form-control" formControlName="phone">
     </label>
-  </div>
-  <div class="alert alert-danger" role="alert" *ngIf="createForm.get('phone').invalid && createForm.get('phone').touched">
-    <span *ngIf="createForm.get('phone').hasError('required')">Phone is required</span>
-    <span *ngIf="createForm.get('phone').hasError('pattern')">Phone must start with +84 followed by 9 or 10 digits.</span>
   </div>
   <!------------------------------->
 
@@ -48,21 +38,24 @@
       <input type="email" class="form-control" formControlName="email">
     </label>
   </div>
-  <div class="alert alert-danger" role="alert" *ngIf="createForm.get('email').invalid && createForm.get('email').touched">
+  <div class="alert alert-danger" role="alert" *ngIf="formEdit.get('email').invalid && formEdit.get('email').touched">
     Invalid email!
   </div>
-
   <!------------------------------->
 
   <div class="form-group row">
     <label class="col">
-     Address
+      Address
       <input type="text" class="form-control" formControlName="address">
     </label>
   </div>
 
   <div class="form-group">
     <button class="btn btn-info" type="submit">Submit</button>
+    <button class="btn btn-warning" [routerLink]="['/']">List Customer</button>
   </div>
+
+
 </form>
-<button class="btn btn-warning" [routerLink]="['/']">List Customer</button>
+
+
