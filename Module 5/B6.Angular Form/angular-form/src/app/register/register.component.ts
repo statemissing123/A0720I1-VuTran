@@ -31,6 +31,8 @@ export class RegisterComponent implements OnInit {
       email: 'info@example.com'
     });
   }
-  onSubmit() {}
+  onSubmit() {
+
+  }
 
 }

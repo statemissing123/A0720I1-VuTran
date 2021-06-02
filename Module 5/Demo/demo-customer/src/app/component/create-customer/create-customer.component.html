@@ -1,1 +1,54 @@
-<p>create-customer works!</p>
+<h1 style="color: green;text-align: center" >Create Customer</h1>
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="col-md-6 offset-md-3" >
+  <div class="form-group row">
+    <label class="col">
+      Name Customer
+      <input type="text" class="form-control" formControlName="name">
+    </label>
+  </div>
+
+<!------------------------------->
+
+  <div class="form-group row">
+    <label class="col">
+      BirthDay
+      <input type="Date" class="form-control" formControlName="birthday">
+    </label>
+  </div>
+  <!------------------------------->
+  <div class="form-group row">
+    <label class="col">
+      Card
+      <input type="number" class="form-control" formControlName="card">
+    </label>
+  </div>
+  <!------------------------------->
+
+  <div class="form-group row">
+    <label class="col">
+      Number Phone
+      <input type="tel" class="form-control" formControlName="phone">
+    </label>
+  </div>
+  <!------------------------------->
+
+  <div class="form-group row">
+    <label class="col">
+      Email
+      <input type="email" class="form-control" formControlName="email">
+    </label>
+  </div>
+
+  <!------------------------------->
+
+  <div class="form-group row">
+    <label class="col">
+     Address
+      <input type="text" class="form-control" formControlName="address">
+    </label>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-info" type="submit">Submit</button>
+  </div>
+</form>

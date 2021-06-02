@@ -16,5 +16,16 @@ export class CustomerService {
     getAllCustomer(): Customer[] {
     return this.listCustomer;
     }
+
+    createCustomer(customer: Customer){
+    if (this.listCustomer.length == 0){
+      customer.id = 1;
+    }else {
+      customer.id = this.listCustomer[this.listCustomer.length - 1].id + 1;
+    }
+    return this.listCustomer.push(customer)
+    }
+
+
 }
 

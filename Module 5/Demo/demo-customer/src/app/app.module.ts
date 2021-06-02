@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ListCustomerComponent} from './component/list-customer/list-customer.component';
 import {CreateCustomerComponent} from './component/create-customer/create-customer.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {CreateCustomerComponent} from './component/create-customer/create-custom
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
