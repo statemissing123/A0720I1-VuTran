@@ -12,6 +12,15 @@ export class ListCustomerComponent implements OnInit {
   listCustomer : Customer[] = [];
   p: number = 1;
   search : "";
+  selectedCustomer : Customer = {
+    id: 0,
+    name: '',
+    birthday: '',
+    card: 0,
+    phone: '',
+    email: '',
+    address: ''
+};
   constructor(private customerService : CustomerService, private router: Router) { }
 
   ngOnInit(): void {
@@ -22,13 +31,13 @@ export class ListCustomerComponent implements OnInit {
     this.customerService.getAllCustomer().subscribe(
       data => {
         this.listCustomer = data;
-        console.log(this.listCustomer)
       })
   }
 
   deleteCustomer(id: number) {
-    this.customerService.deleteStudent(id).subscribe(data => {
-      this.router.navigateByUrl("/")
+    this.customerService.deleteCustomer(id).subscribe(data => {
+      this.ngOnInit()
+
     })
   }
 
@@ -36,5 +45,9 @@ export class ListCustomerComponent implements OnInit {
     this.customerService.searchCustomer(this.search).subscribe(data =>{
       this.listCustomer = data;
     })
+  }
+
+  selectCustomer(customer : Customer){
+    this.selectedCustomer = customer;
   }
 }

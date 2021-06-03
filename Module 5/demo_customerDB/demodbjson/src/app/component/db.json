@@ -1,40 +1,94 @@
 {
   "customer": [
     {
-      "name": "Mi Mi Tran2",
-      "birthday": "2021-06-17",
+      "name": "Mi Mi Tran1",
+      "birthday": "2021-06-11",
       "card": 123456789,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 1
+    },
+    {
+      "name": "Mi Mi Tran2",
+      "birthday": "2021-06-11",
+      "card": 1234567899999,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 2
+    },
+    {
+      "name": "Mi Mi Tran4",
+      "birthday": "2021-06-17",
+      "card": 12344556778678678,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 3
+    },
+    {
+      "name": "Mi Mi Tran",
+      "birthday": "2021-06-18",
+      "card": 1234567897897879800,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 4
+    },
+    {
+      "name": "Mi Mi Tran",
+      "birthday": "2021-06-25",
+      "card": 206316652,
       "phone": "+84787709440",
       "email": "mimitk92@gmail.com",
       "address": "ông ích khiêm",
       "id": 5
     },
     {
-      "name": "linh doan",
-      "birthday": "2021-06-23",
-      "card": 1234567890,
+      "name": "Viet vu tran",
+      "birthday": "2021-06-28",
+      "card": 123456,
       "phone": "+84787709440",
-      "email": "linhdoan1@gmail.com",
-      "address": "Đà nẵng",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
       "id": 6
     },
     {
-      "name": "Mi Mi Tran",
-      "birthday": "2021-06-10",
-      "card": 123456789,
+      "name": "haitruong",
+      "birthday": "2021-06-25",
+      "card": 1234,
       "phone": "+84787709440",
       "email": "mimitk92@gmail.com",
       "address": "ông ích khiêm",
       "id": 7
     },
     {
-      "name": "Mi Mi Tran234",
-      "birthday": "2021-06-19",
-      "card": 123456788,
+      "name": "Mi Mi Tran",
+      "birthday": "2021-06-11",
+      "card": 12345678,
       "phone": "+84787709440",
       "email": "mimitk92@gmail.com",
       "address": "ông ích khiêm",
       "id": 8
+    },
+    {
+      "name": "zitmpap",
+      "birthday": "2021-06-11",
+      "card": 123456789,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 9
+    },
+    {
+      "name": "Mi Mi Tran",
+      "birthday": "2021-06-06",
+      "card": 12345678990,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 10
     }
   ]
 }

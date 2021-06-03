@@ -29,32 +29,32 @@ export class CustomerService {
   //   }
   // ];
 
-  private url = 'http://localhost:3000'
+  private url = 'http://localhost:3000/customer';
   constructor(private httpClient : HttpClient) {
   }
 
   getAllCustomer(): Observable<any> {
-    return this.httpClient.get(this.url + "/customer");
+    return this.httpClient.get(this.url);
   }
 
   createCustomer(customer: Customer) : Observable<any> {
-    return this.httpClient.post(this.url + "/customer",customer);
+    return this.httpClient.post(this.url,customer);
   }
 
-  deleteStudent(id: number): Observable<any> {
-    return this.httpClient.delete(this.url + "/customer/" + id)
+  deleteCustomer(id: number): Observable<any> {
+    return this.httpClient.delete(this.url + "/" + id)
   }
 
   editCustomer(customer: Customer,id: number) :Observable<any> {
-    return this.httpClient.put(this.url + "/customer/" + id,customer)
+    return this.httpClient.put(this.url + "/" + id,customer)
   }
 
   getById(id: number): Observable<any> {
-    return this.httpClient.get(this.url + "/customer/" + id)
+    return this.httpClient.get(this.url + "/" + id)
   }
 
   searchCustomer(search : string): Observable<any>{
-    return this.httpClient.get(this.url + "/customer?name_like=" + search)
+    return this.httpClient.get(this.url + "?name_like=" + search)
   }
 
 
