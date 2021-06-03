@@ -1,0 +1,40 @@
+{
+  "customer": [
+    {
+      "name": "Mi Mi Tran2",
+      "birthday": "2021-06-17",
+      "card": 123456789,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 5
+    },
+    {
+      "name": "linh doan",
+      "birthday": "2021-06-23",
+      "card": 1234567890,
+      "phone": "+84787709440",
+      "email": "linhdoan1@gmail.com",
+      "address": "Đà nẵng",
+      "id": 6
+    },
+    {
+      "name": "Mi Mi Tran",
+      "birthday": "2021-06-10",
+      "card": 123456789,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 7
+    },
+    {
+      "name": "Mi Mi Tran234",
+      "birthday": "2021-06-19",
+      "card": 123456788,
+      "phone": "+84787709440",
+      "email": "mimitk92@gmail.com",
+      "address": "ông ích khiêm",
+      "id": 8
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+
+<div>
+  <h1 style="text-align: center;color: yellow;font-family:Cambria">List Customer</h1>
+  <a class="btn btn-success" [routerLink]="['/create-customer/']">Add New Customer</a>
+  <input style="
+    background-color: #fff;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 7px 7px;
+    width: 300px;
+    position: absolute;right: 100px;" [(ngModel)]="search">
+  <button style="padding: 8px 20px;margin-bottom: 5px;position: absolute;right: 0px;" class="btn btn-warning" (click)="searchCustomer()">Search</button>
+</div>
+<br>
+<table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>Name Customer</th>
+    <th>BirthDay</th>
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let customer of listCustomer | paginate: { itemsPerPage: 3, currentPage: p }">
+    <td>{{customer.id}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.birthday}}</td>
+    <td>{{customer.address}}</td>
+    <td>
+      <button class="btn btn-primary" [routerLink]="['/info-customer/',customer.id]">Info</button>
+      <button class="btn btn-danger"  (click)="deleteCustomer(customer.id)">Delete</button>
+      <button class="btn btn-secondary" [routerLink]="['/edit-customer/',customer.id]">Edit</button>
+    </td>
+  </tr>
+</table>
+<div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

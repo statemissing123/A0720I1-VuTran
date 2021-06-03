@@ -10,19 +10,31 @@ import {Router} from '@angular/router';
 })
 export class ListCustomerComponent implements OnInit {
   listCustomer : Customer[] = [];
+  p: number = 1;
+  search : "";
   constructor(private customerService : CustomerService, private router: Router) { }
 
   ngOnInit(): void {
-    this.initDataListProduct();
+    this.initDataListCustomer();
   }
 
-  initDataListProduct() {
-      this.listCustomer = this.customerService.getAllCustomer();
-      console.log(this.listCustomer);
+  initDataListCustomer() {
+    this.customerService.getAllCustomer().subscribe(
+      data => {
+        this.listCustomer = data;
+        console.log(this.listCustomer)
+      })
   }
 
   deleteCustomer(id: number) {
-    this.customerService.deleteStudent(id);
-    this.listCustomer = this.customerService.getAllCustomer();
+    this.customerService.deleteStudent(id).subscribe(data => {
+      this.router.navigateByUrl("/")
+    })
+  }
+
+  searchCustomer(){
+    this.customerService.searchCustomer(this.search).subscribe(data =>{
+      this.listCustomer = data;
+    })
   }
 }
